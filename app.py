@@ -8,7 +8,7 @@ app = Flask(__name__)
 DB_CONFIG = {
     'host': 'logindb.cufgya2wi0e8.us-east-1.rds.amazonaws.com',
     'user': 'admin',
-    'password': '',
+    'password': 'YourSecurePassword123!',
     'database': 'loginapp'
 }
 
