@@ -1,9 +1,10 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import mysql.connector
 from mysql.connector import Error
 
 app = Flask(__name__)
-
+CORS(app)
 # ✅ Database config (replace with your actual credentials)
 DB_CONFIG = {
     'host': 'logindb.cufgya2wi0e8.us-east-1.rds.amazonaws.com',
@@ -39,7 +40,7 @@ def login():
             cursor.close()
 
             if user:
-                print("Login Successful")
+                print(f"Login Successful")
                 return jsonify({'message': 'Login successful'}), 200
             else:
                 return jsonify({'error': 'Invalid username or password'}), 401
