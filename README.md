@@ -29,6 +29,11 @@ Create a custom network environment.
 		○ Public route table with 0.0.0.0/0 → Internet Gateway
 
 		○ Associate it with public subnets.
+  
+  		○ Private route table with 0.0.0.0/0 → NAT Gateway
+
+		○ Associate it with private subnets.
+  		
 
 	6. Create NAT Gateway
 
