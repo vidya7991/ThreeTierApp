@@ -108,6 +108,8 @@ Once RDS is up:
 
 INSERT INTO users (username, password) VALUES ('admin', 'admin123');
 
+SELECT * FROM users;
+
 
  3. Test with cURL or Postman
 
